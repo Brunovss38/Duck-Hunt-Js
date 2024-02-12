@@ -1,0 +1,162 @@
+body {
+    background-color: black;
+    cursor: url('../Medias/Cursor.png'), auto;
+    font-size: 10px;
+    font-family: 'Press Start 2P';
+    font-size: 22px;
+    color: white;
+    margin: 0;
+}
+
+.BackgroundColor {
+    background-color: #33CCFF;
+    height: 656px;
+    width: 949px;
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-right: 10%;
+}
+
+.BackgroundIMG {
+    z-index: 2;
+}
+
+.MidScreens {
+    width: 950px;
+    height: 257px;
+    position: absolute;
+    bottom: 0px;
+    margin-top: -4px;
+    z-index: 6;
+
+}
+
+.Dog {
+    top: 430px;
+    left: 423px;
+    z-index: 4;
+    display: inline;
+    visibility: visible;
+}
+
+.Hits {
+
+    position: absolute;
+    top: 625px;
+    left: 92px;
+    width: 80px;
+    z-index: 8;
+    background-color: #ffffff;
+}
+
+
+.Score {
+    position: absolute;
+    bottom: 52px;
+    right: 61px;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: right;
+    z-index: 9;
+}
+
+#Shots3 {
+    position: absolute;
+    left: 92px;
+    width: 80px;
+    z-index: 10;
+    bottom: 57px;
+    visibility: visible;
+}
+
+.Shots2 {
+    position: absolute;
+    left: 92px;
+    width: 80px;
+    z-index: 10;
+    bottom: 57px;
+    visibility: hidden;
+}
+
+.Shots1 {
+    position: absolute;
+    left: 92px;
+    width: 80px;
+    z-index: 10;
+    bottom: 57px;
+    visibility: hidden;
+}
+
+.Shots0 {
+    position: absolute;
+    left: 92px;
+    width: 80px;
+    z-index: 10;
+    bottom: 119px;
+    visibility: hidden;
+}
+
+.rounds {
+    position: absolute;
+    bottom: 101px;
+    left: 130px;
+    width: 48px;
+    color: #80D010;
+    font-size: 23px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: right;
+    z-index: 9;
+}
+
+.Greenduck {
+
+    z-index: 2;
+    animation-name: duck;
+    animation-duration: s;
+
+}
+
+
+
+@keyframes duck {
+
+    10% {
+        left: 10%;
+        bottom: 80%;
+    }
+
+    15% {
+        right: 20%;
+        bottom: 85%;
+    }
+
+    30% {
+        left: 30%;
+        bottom: 150%;
+    }
+
+    50% {
+        left: 40%;
+        bottom: 70%;
+    }
+
+    70% {
+        left: 60%;
+        bottom: 30%;
+    }
+
+    100% {
+        left: 100%;
+        bottom: 100%;
+    }
+
+
+}
+
+#Duck {
+    position: absolute;
+    animation-name: duck;
+    animation-duration: 10s;
+    bottom: 321px;
+}

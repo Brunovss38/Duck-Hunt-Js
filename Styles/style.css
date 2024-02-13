@@ -1,29 +1,33 @@
 body {
     background-color: black;
-    cursor: url('../Medias/Cursor.png'), auto;
+    cursor: crosshair;
     font-size: 10px;
     font-family: 'Press Start 2P';
     font-size: 22px;
     color: white;
     margin: 0;
+    overflow-y: hidden;
+
 }
 
 .BackgroundColor {
     background-color: #33CCFF;
     height: 656px;
     width: 949px;
-    margin-left: 10%;
+    margin-left: 20%;
     margin-top: 3%;
     margin-right: 10%;
+    overflow: hidden;
 }
 
 .BackgroundIMG {
     z-index: 2;
+    overflow: hidden;
 }
 
 .MidScreens {
     width: 950px;
-    height: 257px;
+    height: 248px;
     position: absolute;
     bottom: 0px;
     margin-top: -4px;
@@ -40,19 +44,21 @@ body {
 }
 
 .Hits {
-
+    border: #ffffff;
     position: absolute;
-    top: 625px;
-    left: 92px;
-    width: 80px;
-    z-index: 8;
+    bottom: 40px;
+    left: 354px;
+    width: 294px;
+    height: 25px;
+    z-index: -1;
     background-color: #ffffff;
 }
 
 
+
 .Score {
     position: absolute;
-    bottom: 52px;
+    bottom: 45px;
     right: 61px;
     color: #ffffff;
     font-size: 22px;
@@ -63,12 +69,13 @@ body {
 
 #Shots3 {
     position: absolute;
-    left: 92px;
-    width: 80px;
+    left: 90px;
+    width: 84px;
     z-index: 10;
-    bottom: 57px;
+    bottom: 46px;
     visibility: visible;
 }
+
 
 .Shots2 {
     position: absolute;
@@ -99,7 +106,7 @@ body {
 
 .rounds {
     position: absolute;
-    bottom: 101px;
+    bottom: 93px;
     left: 130px;
     width: 48px;
     color: #80D010;
@@ -113,7 +120,7 @@ body {
 
     z-index: 2;
     animation-name: duck;
-    animation-duration: s;
+    animation: 3s linear 1s infinite alternate slidein;
 
 }
 
@@ -146,7 +153,7 @@ body {
         bottom: 30%;
     }
 
-    100% {
+    75% {
         left: 100%;
         bottom: 100%;
     }
@@ -156,7 +163,35 @@ body {
 
 #Duck {
     position: absolute;
-    animation-name: duck;
-    animation-duration: 10s;
+    animation: duck 10s ease-in-out infinite;
     bottom: 321px;
+    z-index: -1;
+}
+
+#BlueDuck {
+    position: absolute;
+    animation: duckAnimation 2s ease-in-out infinite;
+    bottom: 300px;
+    z-index: 999999;
+}
+
+
+@keyframes duckAnimation {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-50px) rotate(-15deg);
+    }
+
+    50% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    75% {
+        transform: translateY(-50px) rotate(15deg);
+    }
 }
